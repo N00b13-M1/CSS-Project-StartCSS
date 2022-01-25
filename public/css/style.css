@@ -1,0 +1,417 @@
+
+/*START GENERAL*/
+*{
+    margin:0;
+    font-family: montserrat;
+    font-weight: bold;
+}
+/*END GENERAL*/
+
+/*START NAVBAR*/
+.nav{
+    background-color: rgb(44,62,80);
+    color: white;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bolder;
+
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav ul{
+    list-style-type:none;
+    display:flex;
+}
+
+.nav li{
+    display:flex;
+    margin: 10px;
+}
+
+.nav-left{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:15px;
+}
+
+.nav-right{
+    flex:5;
+    display:flex;
+    justify-content: center;
+    padding:15px;
+}
+
+/*END NAVBAR */
+/*START SECTION 1 */ 
+
+section:first-of-type{
+    background-color:rgb(220,53,69);
+    color: white;
+    text-align: center;
+}
+
+section:first-of-type img{
+    width: 200px;
+    padding-top:60px;
+    padding-bottom:  20px;
+}
+
+section:first-of-type h1{
+    padding:10px;
+    font-size: 60px;
+}
+
+section:first-of-type p{
+    font-size: 20px;
+    padding:10px;
+    padding-bottom: 70px;
+    text-transform: capitalize;
+}
+
+/*END SECTION 1*/ 
+/*START SECTION 2*/ 
+
+section:nth-of-type(2){
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+section:nth-of-type(2) img{
+    width:250px;
+    border-radius: 5px;
+}
+
+section:nth-of-type(2) h2{
+    padding: 5% 0 1% 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+section:nth-of-type(2) ul{
+    padding-left:0;
+    display:flex;
+    justify-content: center;
+}
+
+section:nth-of-type(2) li{
+    display:flex;
+    margin:10px;
+    justify-content: center;
+}
+
+/*END SECTION 2*/ 
+/*START SECTION 3*/ 
+
+
+section:nth-of-type(3){
+    background-color:rgb(220,53,69);
+    color: white;
+    text-align: center;
+}
+
+section:nth-of-type(3) h2{
+    padding-top: 6%;
+    padding-bottom: 2%;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section:nth-of-type(3) .about{
+    margin: 0 150px;
+}
+
+section:nth-of-type(3) .container2{
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    flex:2;
+    padding-bottom: 7%;
+}
+
+.column1{
+    width: 25%;
+    height: 20%;
+    text-align: left;
+    margin: 15px;
+}
+
+.column2{
+    width: 25%;
+    height: 20%;
+    text-align: left;
+    margin:15px;
+}
+
+/*END SECTION 3*/ 
+/*START SECTION 4*/ 
+
+section:nth-of-type(4){
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+section:nth-of-type(4) h2{
+    padding: 5% 0 1% 0;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    margin: 1% 27%;
+}
+
+input,textarea{
+    margin: 10px;
+    overflow:auto;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid rgba(245,246, 248);
+    padding-bottom: 3%;
+}
+
+textarea{
+    padding-bottom:0%;
+}
+
+
+button {
+    border: none;
+    margin-top: 3%;
+    border-radius: 5px;
+    background-color: rgb(220,53,69);
+    color: white;
+    padding: 10px 20px;
+    width: 80px;
+    float: left;
+}
+
+/*END SECTION 4*/ 
+/*START FOOTER 1*/ 
+footer{
+    color: white;
+}
+.main{
+    background-color: rgb(44,62,80);
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.left{
+    width: 14%;
+    text-align: center;
+}
+
+.mid{
+    width: 25%;
+    text-align: center;
+}
+
+.right{
+    width: 19%;
+    text-align: center;
+}
+
+footer>.bot{
+    background: rgb(26,37,47);
+    text-align:center;
+    padding: 15px;
+}
+
+footer h3{
+    padding: 10px 16px;
+}
+
+.socials ul{
+    display:flex;
+    list-style-type:none;
+    color: white;
+    justify-content: center;
+    padding-left: 0;
+    
+}
+
+.socials li{
+    border-radius: 50px;
+    border-color: white 2px solid;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    color:rgb(31,171,141);
+    text-decoration: none;
+
+}
+
+footer i{
+    color: white;
+    margin: 2px 15px;
+    border-radius: 50px;
+    border: white 2px solid;
+    padding: 7px;
+}
+
+footer i:first-child{
+    width: 17px;
+}
+/*END FOOTER 1*/ 
+
+/*START MEDIAQUERY*/
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+
+    /* Media Query Navbar */
+        .nav{
+            font-size: 12px;
+            text-align: center;
+        }
+        .nav-left{
+            flex: 233%;
+            padding: 0;
+        }
+        .nav-right ul{
+            padding-left:0;
+        }
+        .nav-right{
+            flex: 66%;
+            padding:0;
+            padding-left: 0;
+        } 
+
+    /* Media Section 2 - Portfolio */
+        section:nth-of-type(2) img{
+            width: 75px;
+        }
+
+        section:nth-of-type(2) li{
+            margin:5px;
+    
+        }
+     /* Media Section 3 - About */
+
+        section:nth-of-type(3) .about{
+            margin: 0 
+        }
+
+        section:nth-of-type(3) .container2{
+            display: block;
+        }
+        
+        .column1{
+            width: 80%;
+            margin: 10% 15%;
+            height: 20%;
+            text-align: left;
+        }
+        
+        .column2{
+            width: 80%;
+            margin: 10% 15%;
+            height: 20%;
+            text-align: left;
+        }
+     /* Media Section 4 - About */
+
+        form{
+            flex: 80%;
+            margin: 5%;
+        }
+
+        button {
+            width: 70%;
+            margin: auto;
+        }
+
+        /* Media Section Footer */
+
+        .main {
+            display: block;
+        }
+
+        .left {
+            width: 80%;
+            margin: 10% 10%;
+
+        }
+
+        .mid {
+            width: 80%;
+            margin: 10% 10%;
+
+        }
+
+        .right {
+            width: 80%;
+            margin: 10% 10%;
+        }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    /* Media Section 2 - Portfolio */
+
+    section:nth-of-type(2) img{
+        width: 190px;
+    }
+    
+    /* Media Section 3 - About */
+
+    section:nth-of-type(3) .about{
+        margin: 5%; 
+    }
+
+    .column1{
+        width: 90%;
+        margin: 10% 5%;
+    }
+    
+    .column2{
+        width: 90%;
+        margin: 10% 5%;
+    }
+
+    /* Media Section 4 - Contact */
+    button{
+        width: 30%;
+    }
+
+    .main{
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+    
+    .left{
+        width: 25%;
+    
+    }
+    
+    .mid{
+        width: 25%;
+        text-align: center;
+    }
+    
+    .right{
+        width: 25%;
+        text-align: center;
+    }  
+}
+
+/*END MEDIAQUERY*/
+
